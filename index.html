@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PLYLST</title>
+        <link href="src/normalize.css" rel="stylesheet" type="text/css" />
+        <link href="src/style.css" rel="stylesheet" type="text/css" />
+        <!-- Font Awesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+        <script src="src/jquery.js"></script>
+        <script src="src/audio.js"></script>
+    </head>
+
+    <body>
+    <header>
+        <h1>PLYLST</h1>
+        <p>simple jquery/javascript music player with playlist</p>
+    </header>
+
+
+    <div id="wrap">
+        <div class="controls">
+            <!--<a href="#" class="play"><i class="fas fa-step-forward"></i></a>-->
+            <a href="#" class="play"><i class="fas fa-play"></i></a>
+            <a href="#" class="pause"><i class="fas fa-pause"></i></a>
+            <!--<a href="#" class="play"><i class="fas fa-step-backward"></i></a>-->
+        </div>
+
+        <audio id="audio" preload="auto" tabindex="0">Sorry, your browser does not support HTML5 audio.</audio>
+
+        <ul id="playlist">
+              <li>
+                  <a data="files/1.mp3">
+                    <p id="title">Habits of My Heart</p>
+                    <p id="artist"> Jaymes Young x Sufjan Stevens Remake</p>
+                  </a>
+              </li>
+              <li>
+                  <a data="files/2.mp3">
+                    <p id="title">Never Leave You</p>
+                    <p id="artist">MNEK x Lumedee Refix</p>
+                  </a>
+              </li>
+        </ul>
+    </div>
+
+
+    <footer>
+        <p>by <a href="https://cvbe.net">cvbe.net</a></p>
+    </footer>
+    </body>
+</html>
