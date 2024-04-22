@@ -42,7 +42,10 @@ footer nav a{
 }
 footer a#author {font-weight: 900; letter-spacing: 1px;}
 
-
+sup {
+  font-size: 10px;
+  vertical-align: -1px;
+}
 
 @media screen and (max-width: 740px){
   #wrap,header, footer {
