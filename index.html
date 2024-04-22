@@ -9,9 +9,16 @@
 
         <script src="scr/jquery.js"></script>
         <script src="scr/audio.js"></script>
+        <!-- audio-v2.js (progress bar with volume adjustment) -->
+        <!-- <script src="scr/audio-v2.js"></script> -->
     </head>
 
     <body>
+    <!-- IF USING audio-v2.js (progress bar with volume adjustment) -->
+    <!-- <div id="progress-container" style="width: 100%; background-color: #fca9d2; cursor: pointer;">
+        <div id="progress-bar" style="width: 0%; height: 5px; background-color: #9c597a;"></div> -->
+    </div>
+
     <header>
         <h1>PLYLST</h1>
         <p>simple jquery/javascript music player with playlist</p>
@@ -25,18 +32,23 @@
             <a href="#" class="pause"><i class="fas fa-pause"></i></a>
             <!--<a href="#" class="play"><i class="fas fa-step-backward"></i></a>-->
         </div>
+        <!-- IF USING audio-v2.js (progress bar with volume adjustment) -->
+        <!--<div id="volume-control">
+            <label for="volume-slider">Volume:</label>
+            <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.2">
+        </div>-->
 
         <audio id="audio" preload="auto" tabindex="0">Sorry, your browser does not support HTML5 audio.</audio>
 
         <ul id="playlist">
               <li>
-                  <a data="1.mp3">
+                  <a data="scr/1.mp3">
                     <p id="title">Habits of My Heart</p>
                     <p id="artist"> Jaymes Young x Sufjan Stevens Remake</p>
                   </a>
               </li>
               <li>
-                  <a data="2.mp3">
+                  <a data="scr/2.mp3">
                     <p id="title">Never Leave You</p>
                     <p id="artist">MNEK x Lumedee Refix</p>
                   </a>
@@ -44,9 +56,8 @@
         </ul>
     </div>
 
-
     <footer>
-        <p>by <a href="https://cvbe.net">cvbe.net</a></p>
+        <p>A <a href="https://itscoco.net">CO<sup>2</sup></a> Project.</p>
     </footer>
     </body>
 </html>
